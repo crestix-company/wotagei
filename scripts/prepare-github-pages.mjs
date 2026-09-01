@@ -26,7 +26,7 @@ for (const route of pageRoutes) {
   await rename(source, path.join(destinationDirectory, 'index.html'));
 }
 
-const textExtensions = new Set(['.css', '.html', '.js', '.json', '.map', '.svg', '.txt']);
+const textExtensions = new Set(['.css', '.html', '.js', '.json', '.map', '.rsc', '.svg', '.txt']);
 
 async function listTextFiles(directory) {
   const entries = await readdir(directory, { withFileTypes: true });
@@ -41,12 +41,16 @@ async function listTextFiles(directory) {
   return files;
 }
 
-function prefixProjectPaths(content) {
+function prefixProjectPaths(content, includePageRoutes = true) {
   let prepared = content
-    .replaceAll('href="/"', `href="${projectBase}/"`)
-    .replaceAll('href\\":\\"/\\"', `href\\":\\"${projectBase}/\\"`)
     .replace(/(["'=:(\\])\/(?=(?:_next|assets)\/)/g, `$1${projectBase}/`)
     .replace(/(["'=:(\\])\/(?=(?:og\.png|favicon\.svg)(?:["'\\?#]|$))/g, `$1${projectBase}/`);
+
+  if (!includePageRoutes) return prepared;
+
+  prepared = prepared
+    .replaceAll('href="/"', `href="${projectBase}/"`)
+    .replaceAll('href\\":\\"/\\"', `href\\":\\"${projectBase}/\\"`);
 
   for (const route of pageRoutes) {
     prepared = prepared.replace(
@@ -60,7 +64,7 @@ function prefixProjectPaths(content) {
 
 for (const file of await listTextFiles(outputDirectory)) {
   const original = await readFile(file, 'utf8');
-  const prepared = prefixProjectPaths(original);
+  const prepared = prefixProjectPaths(original, path.extname(file) !== '.rsc');
   if (prepared !== original) await writeFile(file, prepared);
 }
 
@@ -72,7 +76,8 @@ const remainingRoutePath = new RegExp(
 );
 for (const file of await listTextFiles(outputDirectory)) {
   const content = await readFile(file, 'utf8');
-  if (remainingAssetPath.test(content) || remainingRoutePath.test(content)) {
+  const hasRemainingRoute = path.extname(file) !== '.rsc' && remainingRoutePath.test(content);
+  if (remainingAssetPath.test(content) || hasRemainingRoute) {
     throw new Error(`Unprefixed GitHub Pages path remains in ${path.relative(outputDirectory, file)}`);
   }
 }

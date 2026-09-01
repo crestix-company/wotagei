@@ -38,6 +38,7 @@ const localBindingConfig = {
 export default defineConfig(async () => {
   if (isGitHubPages) {
     return {
+      base: '/wotagei/',
       css: { postcss: { plugins: [tailwindcss()] } },
       plugins: [vinext({ prerender: { routes: '*' } })],
     };
