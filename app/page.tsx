@@ -39,7 +39,7 @@ export default function Home() {
       <section className="association-portal" id="intro">
         <div className="association-feature">
           <div className="association-movie"><iframe src="https://www.youtube-nocookie.com/embed/47wKIysCJ58?rel=0" title="協会所属チームLumière 公式パフォーマンス映像" allowFullScreen loading="lazy" /></div>
-          <div className="association-identity"><img src="/assets/logo.jpg" alt="WLD WOTA LIGHTING DANCE" /><p className="kicker">一般社団法人 ヲタ芸普及協会</p><h2>光でつなぐ、<br />文化の未来。</h2><p>普及、次世代育成、地域・企業との連携を通して、ヲタ芸の可能性を社会へ広げます。</p><a href="/organization">協会について詳しく見る <span>↗</span></a></div>
+          <div className="association-identity"><img src="/assets/logo-header.jpg" alt="WLD WOTA LIGHTING DANCE" /><p className="kicker">一般社団法人 ヲタ芸普及協会</p><h2>光でつなぐ、<br />文化の未来。</h2><p>普及、次世代育成、地域・企業との連携を通して、ヲタ芸の可能性を社会へ広げます。</p><a href="/organization">協会について詳しく見る <span>↗</span></a></div>
         </div>
         <div className="association-menu-heading"><div className="section-label light"><span>01</span> ASSOCIATION MENU</div><div><p className="kicker">10 PAGES</p><h2>知りたいことへ、<br />まっすぐ進む。</h2></div><p>各番号は、それぞれの詳しいページへつながります。協会、出演、スクール、スポンサーなど目的からお選びください。</p></div>
         <div className="association-menu-grid">
