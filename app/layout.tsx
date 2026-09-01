@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import './globals.css';
+import MotionEffects from './components/MotionEffects';
 
 export const dynamic = 'force-static';
 
@@ -33,7 +34,7 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="ja">
-      <body>{children}</body>
+      <body>{children}<MotionEffects /></body>
     </html>
   );
 }
