@@ -29,7 +29,7 @@ $association_menu = array(
     array('07', 'SPONSORSHIP', 'スポンサー募集', 'ご支援内容に合わせた出演・企画・PRをご提案。文化と若者の挑戦をともに育てませんか。', '/sponsor/', 'event-02.jpg'),
     array('09', 'ONLINE SHOP', 'オンラインショップ', 'オリジナルウェアやグッズをご覧いただけます。', 'https://lumiere-woodbell.com/#company', 'logo-wordmark.jpg'),
     array('10', 'LUMIÈRE OFFICIAL', 'Lumière 公式ページ', 'プロフィール、メンバー、チームの想いをご紹介します。', '/about/', 'member-kejan.jpg'),
-    array('11', 'DIARY', '日記', '活動レポート、練習風景、イベントの裏側を記録します。', '/blog/', 'event-04.jpg'),
+    array('11', 'DIARY', '日記', '活動レポート、練習風景、イベントの裏側を記録します。', '/blog/', 'guest-kimoto.jpg'),
 );
 ?>
 <main id="top">

@@ -13,7 +13,7 @@ const associationMenu = [
   { no: '07', en: 'SPONSORSHIP', title: 'スポンサー募集', desc: 'ご支援内容に合わせた出演・企画・PRをご提案。文化と若者の挑戦をともに育てませんか。', href: '/sponsor', image: '/assets/event-02.jpg' },
   { no: '09', en: 'ONLINE SHOP', title: 'オンラインショップ', desc: 'オリジナルウェアやグッズをご覧いただけます。', href: 'https://lumiere-woodbell.com/#company', image: '/assets/logo-wordmark.jpg', external: true },
   { no: '10', en: 'LUMIÈRE OFFICIAL', title: 'Lumière 公式ページ', desc: 'プロフィール、メンバー、チームの想いをご紹介します。', href: '/about', image: '/assets/member-kejan.jpg' },
-  { no: '11', en: 'DIARY', title: '日記', desc: '活動レポート、練習風景、イベントの裏側を記録します。', href: '/blog', image: '/assets/event-04.jpg' },
+  { no: '11', en: 'DIARY', title: '日記', desc: '活動レポート、練習風景、イベントの裏側を記録します。', href: '/blog', image: '/assets/guest-kimoto.jpg' },
 ];
 
 export default function Home() {
