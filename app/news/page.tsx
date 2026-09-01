@@ -11,6 +11,7 @@ export const metadata: Metadata = {
 };
 
 const notices = [
+  { pinned: true, date: '2026.09.01', title: '11月3日 千葉日報カルチャー祭 開催延期のお知らせ', text: '11月3日に予定されていたカルチャー祭は延期となりました。新しい日程が決まり次第、改めてお知らせします。' },
   { pinned: true, date: '2026.09.01', title: '出演情報・お知らせページを開設しました', text: '重要なお知らせはこの位置に固定して掲載します。' },
   { pinned: false, date: '2026.03', title: 'ホノルルフェスティバル2026 出演', text: '協会所属チームLumièreが海外ステージへ出演しました。' },
   { pinned: false, date: '2026', title: '第3回パフォーマーカップ 優勝', text: '応援してくださった皆さまへ、心より御礼申し上げます。' },
