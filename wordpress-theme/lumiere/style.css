@@ -1,3 +1,14 @@
+/*
+Theme Name: ヲタ芸普及協会 WLD
+Theme URI: https://lumiere-woodbell.com
+Author: Lumière
+Description: 一般社団法人ヲタ芸普及協会の公式サイト用オリジナルテーマ。所属チームLumièreの出演情報・活動実績・動画を管理画面から更新できます。
+Version: 1.1.5
+Requires at least: 6.4
+Requires PHP: 7.4
+Text Domain: lumiere
+*/
+
 :root {
   --ink: #05070a;
   --ink-soft: #0b0e13;
@@ -647,4 +658,67 @@ footer { padding: 68px max(clamp(22px, 6vw, 96px), calc((100vw - 1600px) / 2 + 9
   html { scroll-behavior: auto; }
   .ticker div { animation: none; }
   *, *::before, *::after { transition-duration: .01ms !important; animation-duration: .01ms !important; animation-iteration-count: 1 !important; }
+}
+
+/* WordPress templates */
+.admin-bar .site-header { top: 32px; }
+.corporate-spec { display: grid; grid-template-columns: minmax(260px,.8fr) 1.2fr; gap: clamp(50px,8vw,140px); padding: clamp(92px,10vw,150px) clamp(22px,6vw,100px); background: var(--white); }
+.corporate-spec h2 { margin: 14px 0 0; font-size: clamp(38px,5vw,72px); line-height: 1.05; }
+.corporate-spec dl { margin: 0; border-top: 1px solid var(--line-dark); }
+.corporate-spec dl div { display: grid; grid-template-columns: 150px 1fr; gap: 22px; padding: 24px 0; border-bottom: 1px solid var(--line-dark); }
+.corporate-spec dt { font-size: 12px; font-weight: 900; letter-spacing: .08em; }
+.corporate-spec dd { margin: 0; color: var(--muted); font-size: 14px; line-height: 1.8; }
+
+.contact-form-section { display: grid; grid-template-columns: minmax(280px,.75fr) 1.25fr; gap: clamp(50px,8vw,140px); padding: clamp(92px,10vw,150px) clamp(22px,6vw,100px); background: var(--ink); color: var(--white); }
+.contact-form-copy h2 { margin: 16px 0 28px; font-size: clamp(42px,5vw,74px); line-height: 1.03; }
+.contact-form-copy > p:last-child { color: rgba(255,255,255,.62); line-height: 1.9; }
+.contact-form-wrap form { display: grid; gap: 22px; }
+.contact-form-wrap label { display: grid; gap: 10px; color: rgba(255,255,255,.74); font-size: 11px; font-weight: 800; letter-spacing: .08em; }
+.contact-form-wrap input, .contact-form-wrap select, .contact-form-wrap textarea { width: 100%; border: 1px solid rgba(255,255,255,.25); border-radius: 0; padding: 17px 18px; background: rgba(255,255,255,.055); color: var(--white); font: inherit; }
+.contact-form-wrap select option { color: var(--ink); }
+.contact-form-wrap textarea { resize: vertical; min-height: 180px; }
+.contact-form-wrap button { display: flex; align-items: center; justify-content: space-between; min-height: 68px; border: 0; padding: 0 24px; background: var(--cyan); color: #fff; font-weight: 900; cursor: pointer; }
+.contact-form-wrap button:hover { background: var(--white); }
+.form-honeypot { position: absolute !important; left: -10000px; width: 1px; height: 1px; overflow: hidden; }
+.form-notice { margin: 0 0 24px; padding: 16px 18px; border: 1px solid rgba(255,255,255,.35); line-height: 1.7; }
+.form-notice.success { border-color: var(--cyan); color: var(--cyan); }
+.form-notice.error { border-color: #ff8ca0; color: #ffb1be; }
+
+.cms-work-section { background: var(--paper); }
+.cms-work-grid, .journal-grid { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 1px; margin-top: 54px; background: var(--line-dark); border: 1px solid var(--line-dark); }
+.cms-work-grid article, .journal-grid article { min-width: 0; padding: 28px; background: var(--white); }
+.cms-work-grid article > img, .journal-grid article img { aspect-ratio: 16/10; margin-bottom: 22px; }
+.cms-work-grid article > span, .journal-grid time { display: block; margin-bottom: 12px; color: var(--blue); font-size: 10px; font-weight: 900; letter-spacing: .11em; }
+.cms-work-grid h3, .journal-grid h2 { margin: 0 0 14px; font-size: 22px; line-height: 1.35; }
+.cms-work-grid p, .journal-grid p { margin: 0 0 24px; color: var(--muted); font-size: 13px; line-height: 1.85; }
+.cms-work-grid a, .journal-grid article span { font-size: 10px; font-weight: 900; letter-spacing: .12em; }
+.journal-list { min-height: 65vh; }
+.navigation.pagination { margin-top: 50px; }
+.nav-links { display: flex; gap: 8px; }
+.nav-links .page-numbers { display: grid; place-items: center; min-width: 40px; height: 40px; border: 1px solid var(--line-dark); }
+.nav-links .current { background: var(--ink); color: var(--white); }
+
+.single-hero { padding: 180px clamp(22px,10vw,180px) 86px; background: var(--ink); color: var(--white); }
+.single-hero time { display: block; margin: 54px 0 18px; color: var(--cyan); font-size: 11px; font-weight: 900; letter-spacing: .13em; }
+.single-hero h1 { max-width: 900px; margin: 0; font-size: clamp(42px,6vw,82px); line-height: 1.13; }
+.single-content, .entry-content { width: min(900px,calc(100% - 44px)); margin: 0 auto; padding: clamp(72px,9vw,130px) 0; font-size: 16px; line-height: 2; }
+.single-content figure, .entry-content figure { margin: 0 0 54px; }
+.single-content h2, .entry-content h2 { margin: 70px 0 24px; font-size: clamp(28px,4vw,44px); line-height: 1.4; }
+.single-content h3, .entry-content h3 { margin: 48px 0 18px; font-size: 24px; }
+.single-content a, .entry-content a { color: var(--blue); text-decoration: underline; text-underline-offset: 4px; }
+.not-found { min-height: 100svh; display: grid; place-content: center; justify-items: start; padding: 140px clamp(22px,10vw,180px); background: var(--ink); color: var(--white); }
+.not-found > span { color: var(--cyan); font-size: clamp(120px,25vw,330px); font-weight: 900; line-height: .7; opacity: .13; }
+.not-found h1 { margin: 28px 0 44px; font-size: clamp(40px,6vw,78px); }
+
+.lumiere-shop .woocommerce ul.products { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 1px; margin-top: 54px; }
+.lumiere-shop .woocommerce ul.products::before, .lumiere-shop .woocommerce ul.products::after { display: none; }
+.lumiere-shop .woocommerce ul.products li.product { float: none; width: auto; margin: 0; padding: 22px; background: var(--white); }
+.lumiere-shop .woocommerce ul.products li.product .price { color: var(--blue); font-weight: 900; }
+.woocommerce a.button, .woocommerce button.button, .woocommerce input.button { border-radius: 0; background: var(--cyan); color: #fff; }
+
+@media (max-width: 782px) {
+  .admin-bar .site-header { top: 46px; }
+  .corporate-spec, .contact-form-section { grid-template-columns: 1fr; }
+  .corporate-spec dl div { grid-template-columns: 110px 1fr; }
+  .cms-work-grid, .journal-grid, .lumiere-shop .woocommerce ul.products { grid-template-columns: 1fr; }
 }

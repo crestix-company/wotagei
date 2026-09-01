@@ -10,7 +10,7 @@ export default function WorksPage() {
   return (
     <main id="top">
       <SiteHeader />
-      <section className="inner-hero inner-works"><div className="inner-hero-bg"><img src="/assets/event-02.jpg" alt="Lumièreの活動風景" /></div><div className="inner-hero-copy"><p className="breadcrumb"><a href="/">HOME</a> / WORKS</p><p className="kicker">ACHIEVEMENTS</p><h1>挑戦の数だけ、<br />光は強くなる。</h1><p>千葉の地域イベントから、ハワイのステージ、映画、メディアへ。</p></div><span className="inner-hero-number">03</span></section>
+      <section className="inner-hero inner-works"><div className="inner-hero-bg"><img src="/assets/event-02.jpg" alt="Lumièreの活動風景" /></div><div className="inner-hero-copy"><p className="breadcrumb"><a href="/">HOME</a> / WORKS</p><p className="kicker">ACHIEVEMENTS</p><h1>挑戦の数だけ、<br />光は強くなる。</h1><p>千葉の地域イベントから、ハワイのステージ、映画、メディアへ。</p></div><span className="inner-hero-number">04</span></section>
 
       <section className="works">
         <div className="works-sticky"><div className="section-label light"><span>01</span> OUR JOURNEY</div><p className="kicker">2022 — 2026</p><h2>光がつないだ、<br /><em>挑戦の軌跡。</em></h2><p>各年の「映像を見る」から、YouTubeで活動の様子をご覧いただけます。</p><a className="outline-button" href={youtubeChannel} target="_blank" rel="noreferrer">YOUTUBE CHANNEL <span>↗</span></a></div>

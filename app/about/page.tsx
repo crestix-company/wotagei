@@ -10,7 +10,7 @@ export default function AboutPage() {
   return (
     <main id="top">
       <SiteHeader />
-      <section className="inner-hero inner-about"><div className="inner-hero-bg"><img src="/assets/event-03.jpg" alt="Lumière メンバー" /></div><div className="inner-hero-copy"><p className="breadcrumb"><a href="/">HOME</a> / ABOUT</p><p className="kicker">WHO WE ARE</p><h1>光の向こうに、<br />人がいる。</h1><p>チームの個性、文化への想い、そして未来へつなぐ理由。</p></div><span className="inner-hero-number">01</span></section>
+      <section className="inner-hero inner-about"><div className="inner-hero-bg"><img src="/assets/event-03.jpg" alt="Lumière メンバー" /></div><div className="inner-hero-copy"><p className="breadcrumb"><a href="/">HOME</a> / LUMIÈRE</p><p className="kicker">LUMIÈRE OFFICIAL</p><h1>光の向こうに、<br />人がいる。</h1><p>協会公式パフォーマンスチームLumièreのプロフィール、想い、活動をご紹介します。</p></div><span className="inner-hero-number">10</span></section>
 
       <section className="section about about-page">
         <div className="section-label"><span>01</span> OUR MISSION</div>

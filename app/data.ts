@@ -11,11 +11,11 @@ export const upcoming = [
 ];
 
 export const members = [
-  { name: 'KEJAN', jp: 'ケジャン', role: 'LEADER / CHOREOGRAPHY', image: '/assets/member-kejan.jpg' },
-  { name: 'SUBARU', jp: 'スバル', role: 'SUB LEADER / INSTRUCTOR', image: '/assets/member-subaru.jpg' },
-  { name: 'CHLOE', jp: 'クロエ', role: 'MOVIE EDITOR / PERFORMER', image: '/assets/member-chloe.jpg' },
-  { name: 'HIRO', jp: 'ヒロ', role: 'SUPPORT MEMBER', image: '/assets/member-hiro.jpg' },
-  { name: 'SEIREI', jp: '青零', role: 'SUPPORT MEMBER', image: '/assets/member-seirei.jpg' },
+  { name: 'KEJAN', jp: 'ケジャン', role: 'リーダー・振付', image: '/assets/member-kejan.jpg' },
+  { name: 'SUBARU', jp: 'スバル', role: 'サブリーダー・講師', image: '/assets/member-subaru.jpg' },
+  { name: 'CHLOE', jp: 'クロエ', role: '映像編集・パフォーマー', image: '/assets/member-chloe.jpg' },
+  { name: 'HIRO', jp: 'ヒロ', role: 'サポートメンバー', image: '/assets/member-hiro.jpg' },
+  { name: 'SEIREI', jp: '青零', role: 'サポートメンバー', image: '/assets/member-seirei.jpg' },
 ];
 
 export const history = [
