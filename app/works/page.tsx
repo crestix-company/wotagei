@@ -4,6 +4,7 @@ import SiteFooter from '../components/SiteFooter';
 import ContactSection from '../components/ContactSection';
 import { history, youtubeChannel } from '../data';
 
+export const dynamic = 'force-static';
 export const metadata: Metadata = { title: '活動実績', description: 'Lumièreの出演、受賞、メディア・映画振付実績と活動映像。' };
 
 export default function WorksPage() {

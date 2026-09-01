@@ -3,6 +3,7 @@ import SiteHeader from '../components/SiteHeader';
 import SiteFooter from '../components/SiteFooter';
 import ContactSection from '../components/ContactSection';
 
+export const dynamic = 'force-static';
 export const metadata: Metadata = { title: '団体・協会について', description: 'WOOD BELL、一般社団法人ヲタ芸普及協会、Lumière、ジュニアルミエール、スクールの関係。' };
 
 export default function OrganizationPage() {

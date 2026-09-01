@@ -3,6 +3,8 @@ import SiteFooter from './components/SiteFooter';
 import ContactSection from './components/ContactSection';
 import { upcoming } from './data';
 
+export const dynamic = 'force-static';
+
 const associationMenu = [
   { no: '01', en: 'ABOUT THE ASSOCIATION', title: 'ヲタ芸普及協会について', desc: '協会の理念、活動内容、代表挨拶、各活動の役割をご紹介します。', href: '/organization', image: '/assets/logo.jpg' },
   { no: '02', en: 'MEMBERS / TEAMS', title: 'メンバー・所属チーム', desc: 'Lumièreメンバー募集中!!! 協会に所属して活動するヲタ芸チームも募集しています。', href: '/members', image: '/assets/event-03.jpg' },

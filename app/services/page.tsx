@@ -3,6 +3,7 @@ import SiteHeader from '../components/SiteHeader';
 import SiteFooter from '../components/SiteFooter';
 import ContactSection from '../components/ContactSection';
 
+export const dynamic = 'force-static';
 export const metadata: Metadata = { title: 'サービス', description: 'イベント出演、ヲタ芸スクール、映画・映像振付、所属チーム、スポンサーのご案内。' };
 
 export default function ServicesPage() {

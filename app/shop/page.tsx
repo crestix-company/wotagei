@@ -3,6 +3,7 @@ import SiteHeader from '../components/SiteHeader';
 import SiteFooter from '../components/SiteFooter';
 import ContactSection from '../components/ContactSection';
 
+export const dynamic = 'force-static';
 export const metadata: Metadata = { title: 'オンラインストア', description: 'LumièreオリジナルTシャツ、パンツ、グッズのオンラインストア。' };
 
 export default function ShopPage() {

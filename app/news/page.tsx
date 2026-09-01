@@ -4,6 +4,7 @@ import SiteFooter from '../components/SiteFooter';
 import ContactSection from '../components/ContactSection';
 import { upcoming } from '../data';
 
+export const dynamic = 'force-static';
 export const metadata: Metadata = {
   title: '出演情報・お知らせ',
   description: '一般社団法人ヲタ芸普及協会とLumièreの出演情報、重要なお知らせ。',

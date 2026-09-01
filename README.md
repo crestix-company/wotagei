@@ -4,6 +4,13 @@
 
 このリポジトリには、デザイン確認用のWebアプリと、本番のWordPressへ導入するオリジナルテーマを収録しています。
 
+## 公開URL
+
+- GitHub Pages確認版：<https://crestix-company.github.io/wotagei/>
+- 本番着地先：WordPress
+
+`main` ブランチへの更新時に、GitHub Pages用の静的サイトを自動生成・公開します。
+
 ## 構成
 
 - `app/`：ローカル確認用Webサイト

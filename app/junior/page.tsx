@@ -3,6 +3,7 @@ import SiteHeader from '../components/SiteHeader';
 import SiteFooter from '../components/SiteFooter';
 import ContactSection from '../components/ContactSection';
 
+export const dynamic = 'force-static';
 export const metadata: Metadata = { title: 'ジュニアルミエール', description: '次世代の表現と挑戦を育むジュニアルミエールのご紹介。' };
 
 export default function JuniorPage() {

@@ -3,6 +3,7 @@ import SiteHeader from '../components/SiteHeader';
 import SiteFooter from '../components/SiteFooter';
 import ContactSection from '../components/ContactSection';
 
+export const dynamic = 'force-static';
 export const metadata: Metadata = { title: '日記', description: '協会所属チームLumièreの活動レポート、練習風景、イベントの記録。' };
 
 const posts = [

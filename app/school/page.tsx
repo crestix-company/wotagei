@@ -3,6 +3,7 @@ import SiteHeader from '../components/SiteHeader';
 import SiteFooter from '../components/SiteFooter';
 import ContactSection from '../components/ContactSection';
 
+export const dynamic = 'force-static';
 export const metadata: Metadata = { title: 'ヲタ芸スクール', description: '千葉県いすみ市・出張・オンラインで学べるWLDヲタ芸スクール。初回無料。' };
 
 export default function SchoolPage() {

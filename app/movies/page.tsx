@@ -4,6 +4,7 @@ import SiteFooter from '../components/SiteFooter';
 import ContactSection from '../components/ContactSection';
 import { youtubeChannel, youtubeSearch } from '../data';
 
+export const dynamic = 'force-static';
 export const metadata: Metadata = { title: '動画ギャラリー', description: 'Lumièreのパフォーマンス、コラボレーション、メディア出演動画。' };
 
 const movies = [

@@ -4,6 +4,7 @@ import SiteFooter from '../components/SiteFooter';
 import ContactSection from '../components/ContactSection';
 import { members } from '../data';
 
+export const dynamic = 'force-static';
 export const metadata: Metadata = {
   title: 'メンバー・所属チーム募集',
   description: 'Lumièreのメンバー紹介、Lumièreメンバー募集、一般社団法人ヲタ芸普及協会の所属チーム募集。',

@@ -4,6 +4,7 @@ import SiteFooter from '../components/SiteFooter';
 import ContactSection from '../components/ContactSection';
 import { members } from '../data';
 
+export const dynamic = 'force-static';
 export const metadata: Metadata = { title: '私たちについて', description: 'Lumièreの理念、メンバー、一般社団法人ヲタ芸普及協会代表のメッセージ。' };
 
 export default function AboutPage() {

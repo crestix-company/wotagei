@@ -4,6 +4,7 @@ import SiteFooter from '../components/SiteFooter';
 import ContactSection from '../components/ContactSection';
 import { supporters } from '../data';
 
+export const dynamic = 'force-static';
 export const metadata: Metadata = {
   title: 'スポンサー募集',
   description: '一般社団法人ヲタ芸普及協会とLumièreの活動をともに育てるスポンサー・パートナー募集。',

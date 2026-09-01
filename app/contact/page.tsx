@@ -3,6 +3,7 @@ import SiteHeader from '../components/SiteHeader';
 import SiteFooter from '../components/SiteFooter';
 import ContactSection from '../components/ContactSection';
 
+export const dynamic = 'force-static';
 export const metadata: Metadata = { title: 'お問い合わせ', description: '出演依頼、ヲタ芸スクール、所属チーム、スポンサーに関するお問い合わせ。' };
 
 export default function ContactPage() {
