@@ -4,10 +4,10 @@ export const youtubeSearch = (query: string) => `https://www.youtube.com/results
 export const upcoming = [
   { date: '09.12', day: 'SAT', title: '町田八幡神社大祭', area: '千葉県' },
   { date: '09.13', day: 'SUN', title: '野田ハロウィンフェスタ', area: '千葉県野田市' },
-  { date: '09.19', day: 'SAT', title: '袖ケ浦 出演', area: '千葉県袖ケ浦市' },
+  { date: '09.19', day: 'SAT', title: 'キッチンカーフェスタ', area: '千葉県袖ケ浦市' },
   { date: '09.26', day: 'SAT', title: '君津ふれあい祭り', area: '千葉県君津市' },
   { date: '09.26', day: 'SAT', title: '東の原公園祭り', area: '千葉県' },
-  { date: '09.27', day: 'SUN', title: '市原 出演', area: '千葉県市原市' },
+  { date: '09.27', day: 'SUN', title: '市津祭り', area: '千葉県市原市' },
   { date: '10.17–18', day: 'SAT–SUN', title: 'MAZDA新港店イベント', area: '千葉県千葉市' },
   { date: '11.03', day: '延期', title: '千葉日報カルチャー祭（開催延期）', area: '新日程は後日お知らせ' },
 ];
