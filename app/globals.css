@@ -165,7 +165,7 @@ button, summary { font: inherit; }
 .member-heading { display: grid; grid-template-columns: 1fr .44fr; align-items: end; gap: 55px; margin-bottom: 84px; }
 .member-heading .kicker { color: var(--blue); }
 .member-heading > p { margin: 0 0 7px; color: #62656a; font-size: 13px; line-height: 2; }
-.member-grid { display: grid; grid-template-columns: repeat(5,1fr); gap: 1px; background: rgba(6,8,12,.17); border: 1px solid var(--line-dark); }
+.member-grid { display: grid; grid-template-columns: repeat(4,1fr); gap: 1px; background: rgba(6,8,12,.17); border: 1px solid var(--line-dark); }
 .member-card { position: relative; padding-bottom: 28px; background: var(--paper); overflow: hidden; }
 .member-image { aspect-ratio: .78; overflow: hidden; background: #d8d8d5; }
 .member-image img { filter: saturate(.78) contrast(1.06); transition: transform .55s ease, filter .55s ease; }
@@ -603,8 +603,8 @@ footer { padding: 68px max(clamp(22px, 6vw, 96px), calc((100vw - 1600px) / 2 + 9
   .movie-copy { min-height: 430px; padding: 70px 22px; }
   .movie-copy > span { margin-bottom: 90px; }
   .member-grid { grid-template-columns: repeat(2,1fr); }
-  .member-card:last-child { grid-column: span 2; }
-  .member-card:last-child .member-image { aspect-ratio: 1.5; }
+  .member-card:last-child { grid-column: auto; }
+  .member-card:last-child .member-image { aspect-ratio: .78; }
   .team-call { min-height: 720px; padding: 90px 20px; }
   .team-call::after { background: linear-gradient(90deg, rgba(3,5,8,.92), rgba(3,5,8,.57)); }
   .team-call-en { right: -4%; font-size: 62px; }
@@ -645,11 +645,14 @@ footer { padding: 68px max(clamp(22px, 6vw, 96px), calc((100vw - 1600px) / 2 + 9
   .mobile-cta a:last-child { background: var(--white); border-left: 1px solid rgba(0,0,0,.15); }
 }
 
-@media (max-width: 390px) {
-  .hero h1 { font-size: 52px; }
+@media (max-width: 500px) {
   .member-grid { grid-template-columns: 1fr; }
   .member-card:last-child { grid-column: auto; }
   .member-card:last-child .member-image { aspect-ratio: .78; }
+}
+
+@media (max-width: 390px) {
+  .hero h1 { font-size: 52px; }
 }
 
 @media (prefers-reduced-motion: reduce) {

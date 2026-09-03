@@ -17,7 +17,9 @@ export const members = [
   { name: 'SUBARU', jp: 'スバル', role: 'サブリーダー・講師', image: '/assets/member-subaru.jpg' },
   { name: 'CHLOE', jp: 'クロエ', role: '映像編集・パフォーマー', image: '/assets/member-chloe.jpg' },
   { name: 'HIRO', jp: 'ヒロ', role: 'サポートメンバー', image: '/assets/member-hiro.jpg' },
-  { name: 'SEIREI', jp: '青零', role: 'サポートメンバー', image: '/assets/member-seirei.jpg' },
+  { name: 'AOZERO', jp: '青零', role: 'サポートメンバー', image: '/assets/member-seirei.jpg' },
+  { name: 'SORYU', jp: 'ソリュ', role: 'パフォーマー', image: '/assets/member-soryu.jpg' },
+  { name: 'YOSHIKI', jp: 'ヨシキ', role: 'パフォーマー', image: '/assets/member-yoshiki.jpg' },
 ];
 
 export const history = [
