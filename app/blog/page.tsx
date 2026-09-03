@@ -8,8 +8,8 @@ export const metadata: Metadata = { title: '日記', description: '協会所属�
 
 const posts = [
   { date: '2026.03', category: 'OVERSEAS', title: 'ホノルルフェスティバル2026に出演しました', text: '千葉から世界へ。現地のステージで届けた光と、チームが得た新しい景色。', image: '/assets/event-01.jpg', href: '/works' },
-  { date: '2026', category: 'COMPETITION', title: '第3回パフォーマーカップ 優勝', text: '積み重ねてきた技術とチームワークが、ひとつの結果につながりました。', image: '/assets/event-06.jpg', href: '/works' },
-  { date: '2025', category: 'BEHIND THE SCENES', title: '映像・映画作品の振付、その舞台裏', text: '作品の世界観を光と動きへ変換する、振付制作のプロセスをご紹介します。', image: '/assets/event-04.jpg', href: '/services' },
+  { date: '2026', category: 'COMPETITION', title: '第3回パフォーマーカップ 優勝', text: '積み重ねてきた技術とチームワークが、ひとつの結果につながりました。', image: '/assets/performance-blue-stage.jpg', href: '/works' },
+  { date: '2025', category: 'BEHIND THE SCENES', title: '映像・映画作品の振付、その舞台裏', text: '作品の世界観を光と動きへ変換する、振付制作のプロセスをご紹介します。', image: '/assets/team-backstage.jpg', href: '/services' },
 ];
 
 export default function BlogPage() {

@@ -7,7 +7,7 @@ export const dynamic = 'force-static';
 
 const associationMenu = [
   { no: '01', en: 'ABOUT THE ASSOCIATION', title: 'ヲタ芸普及協会について', desc: '協会の理念、活動内容、代表挨拶、各活動の役割をご紹介します。', href: '/organization', image: '/assets/logo.jpg' },
-  { no: '02', en: 'MEMBERS / TEAMS', title: 'メンバー・所属チーム', desc: 'Lumièreメンバー募集中!!! 協会に所属して活動するヲタ芸チームも募集しています。', href: '/members', image: '/assets/event-03.jpg' },
+  { no: '02', en: 'MEMBERS / TEAMS', title: 'メンバー・所属チーム', desc: 'Lumièreメンバー募集中!!! 協会に所属して活動するヲタ芸チームも募集しています。', href: '/members', image: '/assets/team-local-event.jpg' },
   { no: '03', en: 'NEWS / LIVE INFO', title: '出演情報・お知らせ', desc: '直近の出演予定と大切なお知らせを、見逃さないよう分かりやすく掲載します。', href: '/news', image: '/assets/event-05.jpg' },
   { no: '04', en: 'ACHIEVEMENTS', title: 'これまでの実績', desc: '海外公演、イベント、メディア、地域活動の歩み。', href: '/works', image: '/assets/event-01.jpg' },
   { no: '05', en: 'PERFORMANCE REQUEST', title: '出演依頼・お仕事のご相談', desc: '企業イベント、地域のお祭り、学校行事、映像作品まで。', href: '/services', image: '/assets/event-06.jpg' },
