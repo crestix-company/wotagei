@@ -12,7 +12,7 @@ export const metadata: Metadata = {
 
 export default function MembersPage() {
   return <main id="top"><SiteHeader />
-    <section className="inner-hero inner-about"><div className="inner-hero-bg"><img src="/assets/event-03.jpg" alt="Lumière メンバー" /></div><div className="inner-hero-copy"><p className="breadcrumb"><a href="/">HOME</a> / MEMBERS &amp; TEAMS</p><p className="kicker">MEMBERS / TEAM NETWORK</p><h1>ひとりの光から、<br />大きな文化へ。</h1><p>Lumièreのメンバーと、協会とともに活動する仲間をご紹介します。</p></div><span className="inner-hero-number">02</span></section>
+    <section className="inner-hero inner-about members-hero"><div className="inner-hero-bg"><img src="/assets/members-hero-camera.jpg" alt="撮影映像を確認するLumièreメンバー" /></div><div className="inner-hero-copy"><p className="breadcrumb"><a href="/">HOME</a> / MEMBERS &amp; TEAMS</p><p className="kicker">MEMBERS / TEAM NETWORK</p><h1>ひとりの光から、<br />大きな文化へ。</h1><p>Lumièreのメンバーと、協会とともに活動する仲間をご紹介します。</p></div><span className="inner-hero-number">02</span></section>
 
     <section className="section members members-page">
       <div className="section-label"><span>02</span> LUMIÈRE MEMBERS</div>

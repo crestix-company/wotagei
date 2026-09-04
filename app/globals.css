@@ -351,6 +351,7 @@ footer { padding: 68px max(clamp(22px, 6vw, 96px), calc((100vw - 1600px) / 2 + 9
 .inner-hero { position: relative; min-height: 720px; display: grid; align-items: end; overflow: hidden; isolation: isolate; padding: 180px max(clamp(22px, 7vw, 115px), calc((100vw - 1600px) / 2 + 115px)) 100px; color: var(--white); background: var(--ink); }
 .inner-hero-bg { position: absolute; z-index: -2; inset: 0; }
 .inner-hero-bg img { filter: saturate(.55) contrast(1.12); }
+.members-hero .inner-hero-bg img { object-position: center 46%; }
 .inner-hero::after { content: ""; position: absolute; z-index: -1; inset: 0; background: linear-gradient(90deg, rgba(2,3,5,.96), rgba(2,3,5,.62) 56%, rgba(2,3,5,.25)), linear-gradient(0deg, rgba(2,3,5,.8), transparent 55%); }
 .inner-hero-copy { position: relative; z-index: 1; max-width: 950px; }
 .breadcrumb { margin: 0 0 72px; color: rgba(255,255,255,.5); font-size: 8px; font-weight: 900; letter-spacing: .16em; }
@@ -474,6 +475,7 @@ footer { padding: 68px max(clamp(22px, 6vw, 96px), calc((100vw - 1600px) / 2 + 9
   .home-join { display: block; padding: 90px 20px; }
   .home-join > div:last-child { margin-top: 52px; }
   .inner-hero { min-height: 660px; padding: 150px 20px 80px; }
+  .members-hero .inner-hero-bg img { object-position: center 42%; }
   .breadcrumb { margin-bottom: 62px; }
   .inner-hero-copy h1 { font-size: clamp(51px, 15vw, 74px); }
   .inner-hero-number { right: -3vw; font-size: 130px; }
