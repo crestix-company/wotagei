@@ -179,7 +179,7 @@ function lumiere_create_core_pages() {
         'services' => 'サービス',
         'works' => '活動実績',
         'contact' => 'お問い合わせ',
-        'junior' => 'ジュニアルミエール',
+        'junior' => 'ルミエールJr.',
         'school' => 'ヲタ芸スクール',
         'movies' => '動画ギャラリー',
         'organization' => '団体・協会について',

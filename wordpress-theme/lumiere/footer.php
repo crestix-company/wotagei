@@ -8,10 +8,10 @@
         <a href="<?php echo esc_url(home_url('/services/')); ?>">05 SERVICE</a>
         <a href="<?php echo esc_url(home_url('/school/')); ?>">06 SCHOOL</a>
         <a href="<?php echo esc_url(home_url('/sponsor/')); ?>">07 SPONSOR</a>
+        <a href="<?php echo esc_url(home_url('/contact/')); ?>">08 CONTACT</a>
         <a href="https://lumiere-woodbell.com/#company" target="_blank" rel="noreferrer">09 SHOP</a>
         <a href="<?php echo esc_url(home_url('/about/')); ?>">10 LUMIÈRE</a>
         <a href="<?php echo esc_url(home_url('/blog/')); ?>">11 DIARY</a>
-        <a href="<?php echo esc_url(home_url('/contact/')); ?>">CONTACT</a>
     </div>
     <div class="footer-links">
         <a href="<?php echo esc_url(lumiere_mod('instagram_url', 'https://www.instagram.com/lumiere20241103')); ?>" target="_blank" rel="noreferrer">INSTAGRAM ↗</a>

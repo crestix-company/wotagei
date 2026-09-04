@@ -45,8 +45,49 @@ export const history = [
   },
 ];
 
-export const supporters = [
-  'アイドルカフェ', '居酒屋とんちゃん', 'さくら子庵株式会社', '株式会社エステック',
-  'Lecrat corporation', '太海海釣りセンター', '松鶴丸', '風鈴堂',
-  '薪ストーブ専門店ドリームファイヤー', '楽ちん堂美容室',
+export const supporterGroups = [
+  {
+    id: 'gold',
+    en: 'GOLD SUPPORTERS',
+    title: 'ゴールドサポーター',
+    members: [
+      { name: 'サミー畑' },
+      { name: '居酒屋とんちゃん様' },
+      { name: 'Lecrat corporation様' },
+      { name: '大野雅一様' },
+      { name: '神崎利昭様' },
+      { name: 'Tomomi様' },
+      { name: '株式会社PLAY', detail: '代表 黒田和道様' },
+      { name: '中村松洋様' },
+      { name: '太海フラワー', detail: '磯釣りセンター様' },
+    ],
+  },
+  {
+    id: 'platinum',
+    en: 'PLATINUM SUPPORTERS',
+    title: 'プラチナサポーター',
+    members: [
+      { name: 'さくら子庵様' },
+      { name: '小倉和江様' },
+      { name: '三好一彩様' },
+      { name: '株式会社エステック', detail: '代表取締役 大場公二様' },
+    ],
+  },
+  {
+    id: 'diamond',
+    en: 'DIAMOND SUPPORTER',
+    title: 'ダイヤモンドサポーター',
+    members: [
+      { name: '株式会社コラボカフェ', detail: '代表 櫻井光太郎様' },
+    ],
+  },
+  {
+    id: 'special',
+    en: 'SPECIAL PARTNERS',
+    title: '特別協賛',
+    members: [
+      { name: '株式会社リバールーツ' },
+      { name: '有限会社INDE INTE', detail: '大塚和宏様' },
+    ],
+  },
 ];

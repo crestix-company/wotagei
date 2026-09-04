@@ -23,7 +23,7 @@ export default function WorksPage() {
       <section className="section gallery-section">
         <div className="section-label"><span>02</span> 2026 HIGHLIGHTS</div><div className="gallery-heading"><div><p className="kicker">FROM HONOLULU</p><h2>世界で灯した、<br /><em>新しい光。</em></h2></div><a href="https://www.instagram.com/lumiere20241103" target="_blank" rel="noreferrer">INSTAGRAM <span>↗</span></a></div>
         <div className="gallery-grid">{[2,4,6,7].map((num,index) => <figure key={num} className={`gallery-${index + 1}`}><img src={`/assets/event-0${num}.jpg`} alt="Lumièreの活動風景" loading="lazy" /></figure>)}</div>
-        <div className="media-proof"><p>MEDIA &amp; COLLABORATION</p><div className="media-images"><figure><img src="/assets/guest-aerts.jpg" alt="交流実績" loading="lazy" /></figure><figure><img src="/assets/guest-baruto.jpg" alt="交流実績" loading="lazy" /></figure><figure><img src="/assets/guest-kimoto.jpg" alt="交流実績" loading="lazy" /></figure><figure><img src="/assets/pro-dancer.jpg" alt="プロダンサーとの交流" loading="lazy" /></figure></div></div>
+        <div className="media-proof" id="media-collaboration"><p>MEDIA &amp; COLLABORATION</p><div className="media-images"><figure><img src="/assets/guest-aerts.jpg" alt="ピーター・アーツさんとの交流" loading="lazy" /></figure><figure><img src="/assets/guest-baruto.jpg" alt="交流実績" loading="lazy" /></figure><figure><img src="/assets/guest-kimoto.jpg" alt="交流実績" loading="lazy" /></figure><figure><img src="/assets/pro-dancer.jpg" alt="プロダンサーとの交流" loading="lazy" /></figure></div></div>
       </section>
       <ContactSection /><SiteFooter />
     </main>

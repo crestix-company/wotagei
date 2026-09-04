@@ -27,6 +27,7 @@ $association_menu = array(
     array('05', 'PERFORMANCE REQUEST', '出演依頼・お仕事のご相談', '企業イベント、地域のお祭り、学校行事、映像作品まで。', '/services/', 'event-06.jpg'),
     array('06', 'SCHOOL / INSTRUCTOR', 'スクール・講師派遣', 'いすみ市でヲタ芸に通いたい方、学校・団体への講師派遣、オンライン受講はこちら。', '/school/', 'pro-dancer.jpg'),
     array('07', 'SPONSORSHIP', 'スポンサー募集', 'ご支援内容に合わせた出演・企画・PRをご提案。文化と若者の挑戦をともに育てませんか。', '/sponsor/', 'event-02.jpg'),
+    array('08', 'CONTACT', 'お問い合わせ', '出演、スクール、所属、スポンサーについて、お気軽にご相談ください。', '/contact/', 'contact-hero-uno.jpg'),
     array('09', 'ONLINE SHOP', 'オンラインショップ', 'オリジナルウェアやグッズをご覧いただけます。', 'https://lumiere-woodbell.com/#company', 'logo-wordmark.jpg'),
     array('10', 'LUMIÈRE OFFICIAL', 'Lumière 公式ページ', 'プロフィール、メンバー、チームの想いをご紹介します。', '/about/', 'member-kejan.jpg'),
     array('11', 'DIARY', '日記', '活動レポート、練習風景、イベントの裏側を記録します。', '/blog/', 'guest-kimoto.jpg'),
@@ -49,7 +50,7 @@ $association_menu = array(
             <div class="association-movie"><iframe src="https://www.youtube-nocookie.com/embed/47wKIysCJ58?rel=0" title="協会所属チームLumière 公式パフォーマンス映像" allowfullscreen loading="lazy"></iframe></div>
             <div class="association-identity"><img src="<?php echo esc_url(lumiere_asset('logo-header.jpg')); ?>" alt="WLD WOTA LIGHTING DANCE"><p class="kicker">一般社団法人 ヲタ芸普及協会</p><h2>光でつなぐ、<br>文化の未来。</h2><p>普及、次世代育成、地域・企業との連携を通して、ヲタ芸の可能性を社会へ広げます。</p><a href="<?php echo esc_url(home_url('/organization/')); ?>">協会について詳しく見る <span>↗</span></a></div>
         </div>
-        <div class="association-menu-heading"><div class="section-label light"><span>01</span> ASSOCIATION MENU</div><div><p class="kicker">10 PAGES</p><h2>知りたいことへ、<br>まっすぐ進む。</h2></div><p>各番号は、それぞれの詳しいページへつながります。協会、出演、スクール、スポンサーなど目的からお選びください。</p></div>
+        <div class="association-menu-heading"><div class="section-label light"><span>01</span> ASSOCIATION MENU</div><div><p class="kicker">11 PAGES</p><h2>知りたいことへ、<br>まっすぐ進む。</h2></div><p>各番号は、それぞれの詳しいページへつながります。協会、出演、スクール、スポンサーなど目的からお選びください。</p></div>
         <div class="association-menu-grid"><?php foreach ($association_menu as $item) : $is_external = 0 === strpos($item[4], 'http'); $item_url = $is_external ? $item[4] : home_url($item[4]); ?><a class="association-menu-card" href="<?php echo esc_url($item_url); ?>"<?php echo $is_external ? ' target="_blank" rel="noreferrer"' : ''; ?>><div class="association-menu-image"><img src="<?php echo esc_url(lumiere_asset($item[5])); ?>" alt="" loading="lazy"></div><div class="association-menu-copy"><span><?php echo esc_html($item[0] . ' / ' . $item[1]); ?></span><h3><?php echo esc_html($item[2]); ?></h3><p><?php echo esc_html($item[3]); ?></p><i>↗</i></div></a><?php endforeach; ?></div>
     </section>
 
@@ -61,11 +62,11 @@ $association_menu = array(
                 $date = $date_raw ? wp_date('m.d', strtotime($date_raw)) : '';
                 $day = get_post_meta($event->ID, 'event_day', true);
                 $area = get_post_meta($event->ID, 'event_area', true);
-                $link = get_post_meta($event->ID, 'event_link', true) ?: get_permalink($event);
+                $link = get_post_meta($event->ID, 'event_link', true);
             ?>
-                <a class="schedule-row" href="<?php echo esc_url($link); ?>"><span class="schedule-index"><?php echo esc_html(str_pad((string)($index + 1), 2, '0', STR_PAD_LEFT)); ?></span><time><b><?php echo esc_html($date); ?></b><small><?php echo esc_html($day); ?></small></time><span class="schedule-title"><?php echo esc_html(get_the_title($event)); ?></span><span class="schedule-area"><?php echo esc_html($area); ?></span><span class="schedule-arrow">↗</span></a>
+                <?php if ($link) : ?><a class="schedule-row" href="<?php echo esc_url($link); ?>"><?php else : ?><div class="schedule-row schedule-row-static"><?php endif; ?><span class="schedule-index"><?php echo esc_html(str_pad((string)($index + 1), 2, '0', STR_PAD_LEFT)); ?></span><time><b><?php echo esc_html($date); ?></b><small><?php echo esc_html($day); ?></small></time><span class="schedule-title"><?php echo esc_html(get_the_title($event)); ?></span><span class="schedule-area"><?php echo esc_html($area); ?></span><?php if ($link) : ?><span class="schedule-arrow">↗</span></a><?php else : ?></div><?php endif; ?>
             <?php endforeach; else : foreach ($fallback_events as $index => $event) : ?>
-                <a class="schedule-row" href="<?php echo esc_url(home_url('/contact/')); ?>"><span class="schedule-index"><?php echo esc_html(str_pad((string)($index + 1), 2, '0', STR_PAD_LEFT)); ?></span><time><b><?php echo esc_html($event['date']); ?></b><small><?php echo esc_html($event['day']); ?></small></time><span class="schedule-title"><?php echo esc_html($event['title']); ?></span><span class="schedule-area"><?php echo esc_html($event['area']); ?></span><span class="schedule-arrow">↗</span></a>
+                <div class="schedule-row schedule-row-static"><span class="schedule-index"><?php echo esc_html(str_pad((string)($index + 1), 2, '0', STR_PAD_LEFT)); ?></span><time><b><?php echo esc_html($event['date']); ?></b><small><?php echo esc_html($event['day']); ?></small></time><span class="schedule-title"><?php echo esc_html($event['title']); ?></span><span class="schedule-area"><?php echo esc_html($event['area']); ?></span></div>
             <?php endforeach; endif; ?>
         </div>
         <?php $news = new WP_Query(array('post_type' => 'post', 'posts_per_page' => 3, 'ignore_sticky_posts' => false)); if ($news->have_posts()) : ?>

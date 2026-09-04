@@ -13,6 +13,7 @@ const associationMenu = [
   { no: '05', en: 'PERFORMANCE REQUEST', title: '出演依頼・お仕事のご相談', desc: '企業イベント、地域のお祭り、学校行事、映像作品まで。', href: '/services', image: '/assets/performance-city-night.jpg' },
   { no: '06', en: 'SCHOOL / INSTRUCTOR', title: 'スクール・講師派遣', desc: 'いすみ市でヲタ芸に通いたい方、学校・団体への講師派遣、オンライン受講はこちら。', href: '/school', image: '/assets/pro-dancer.jpg' },
   { no: '07', en: 'SPONSORSHIP', title: 'スポンサー募集', desc: 'ご支援内容に合わせた出演・企画・PRをご提案。文化と若者の挑戦をともに育てませんか。', href: '/sponsor', image: '/assets/sponsor-bridge-performance.jpg' },
+  { no: '08', en: 'CONTACT', title: 'お問い合わせ', desc: '出演、スクール、所属、スポンサーについて、お気軽にご相談ください。', href: '/contact', image: '/assets/contact-hero-uno.jpg' },
   { no: '09', en: 'ONLINE SHOP', title: 'オンラインショップ', desc: 'オリジナルウェアやグッズをご覧いただけます。', href: 'https://lumiere-woodbell.com/#company', image: '/assets/logo-wordmark.jpg', external: true },
   { no: '10', en: 'LUMIÈRE OFFICIAL', title: 'Lumière 公式ページ', desc: 'プロフィール、メンバー、チームの想いをご紹介します。', href: '/about', image: '/assets/member-kejan.jpg' },
   { no: '11', en: 'DIARY', title: '日記', desc: '活動レポート、練習風景、イベントの裏側を記録します。', href: '/blog', image: '/assets/guest-kimoto.jpg' },
@@ -43,7 +44,7 @@ export default function Home() {
           <div className="association-movie"><iframe src="https://www.youtube-nocookie.com/embed/47wKIysCJ58?rel=0" title="協会所属チームLumière 公式パフォーマンス映像" allowFullScreen loading="lazy" /></div>
           <div className="association-identity"><img src="/assets/logo-header.jpg" alt="WLD WOTA LIGHTING DANCE" /><p className="kicker">一般社団法人 ヲタ芸普及協会</p><h2>光でつなぐ、<br />文化の未来。</h2><p>普及、次世代育成、地域・企業との連携を通して、ヲタ芸の可能性を社会へ広げます。</p><a href="/organization">協会について詳しく見る <span>↗</span></a></div>
         </div>
-        <div className="association-menu-heading"><div className="section-label light"><span>01</span> ASSOCIATION MENU</div><div><p className="kicker">10 PAGES</p><h2>知りたいことへ、<br />まっすぐ進む。</h2></div><p>各番号は、それぞれの詳しいページへつながります。協会、出演、スクール、スポンサーなど目的からお選びください。</p></div>
+        <div className="association-menu-heading"><div className="section-label light"><span>01</span> ASSOCIATION MENU</div><div><p className="kicker">11 PAGES</p><h2>知りたいことへ、<br />まっすぐ進む。</h2></div><p>各番号は、それぞれの詳しいページへつながります。協会、出演、スクール、スポンサーなど目的からお選びください。</p></div>
         <div className="association-menu-grid">
           {associationMenu.map(item => <a className="association-menu-card" href={item.href} key={item.no} target={item.external ? '_blank' : undefined} rel={item.external ? 'noreferrer' : undefined}><div className="association-menu-image"><img src={item.image} alt="" loading="lazy" /></div><div className="association-menu-copy"><span>{item.no} / {item.en}</span><h3>{item.title}</h3><p>{item.desc}</p><i>↗</i></div></a>)}
         </div>
@@ -53,7 +54,7 @@ export default function Home() {
         <div className="section-label light"><span>03</span> LIVE INFO / NEWS</div>
         <div className="news-heading"><div><p className="kicker">UPCOMING / 2026</p><h2>出演情報と、<br />大切なお知らせ。</h2></div><p>重要な情報は先頭に固定し、出演予定と協会からのお知らせを分かりやすく更新します。</p></div>
         <div className="schedule">
-          {upcoming.map((event, index) => <a className="schedule-row" href="/contact" key={`${event.date}-${event.title}`}><span className="schedule-index">{String(index + 1).padStart(2, '0')}</span><time><b>{event.date}</b><small>{event.day}</small></time><span className="schedule-title">{event.title}</span><span className="schedule-area">{event.area}</span><span className="schedule-arrow">↗</span></a>)}
+          {upcoming.map((event, index) => <div className="schedule-row schedule-row-static" key={`${event.date}-${event.title}`}><span className="schedule-index">{String(index + 1).padStart(2, '0')}</span><time><b>{event.date}</b><small>{event.day}</small></time><span className="schedule-title">{event.title}</span><span className="schedule-area">{event.area}</span></div>)}
         </div>
       </section>
 

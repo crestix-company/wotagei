@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import SiteHeader from '../components/SiteHeader';
 import SiteFooter from '../components/SiteFooter';
 import ContactSection from '../components/ContactSection';
-import { supporters } from '../data';
+import { supporterGroups } from '../data';
 
 export const dynamic = 'force-static';
 export const metadata: Metadata = {
@@ -20,7 +20,12 @@ export default function SponsorPage() {
     </section>
 
     <section className="corporate-spec sponsor-plan"><div><p className="kicker">PARTNERSHIP IDEAS</p><h2>できること。</h2></div><dl><div><dt>ステージ</dt><dd>企業イベント、周年行事、地域催事などへの出演</dd></div><div><dt>オリジナル</dt><dd>商品・テーマ・楽曲に合わせた演目や振付の制作</dd></div><div><dt>発信</dt><dd>SNS、動画、活動レポートでのパートナー紹介</dd></div><div><dt>体験企画</dt><dd>社内・学校・地域向けのヲタ芸体験やワークショップ</dd></div><div><dt>ご提案</dt><dd>目的、ご予算、実施時期を伺い、内容を個別設計</dd></div></dl></section>
-    <div className="supporter-strip"><p>SUPPORTED BY</p><div>{supporters.map(name => <span key={name}>{name}</span>)}</div></div>
+    <section className="supporter-section" id="supporters">
+      <div className="supporter-heading"><div className="section-label light"><span>01</span> OUR SUPPORTERS</div><div><p className="kicker">SUPPORTED BY</p><h2>この光を支える、<br /><em>パートナーの皆さま。</em></h2></div><p>日頃よりあたたかなご支援をいただいている皆さまをご紹介します。</p></div>
+      <div className="supporter-groups">
+        {supporterGroups.map((group, groupIndex) => <article className="supporter-group" data-tier={group.id} key={group.id}><header><div><span>{group.en}</span><h3>{group.title}</h3></div><i>{String(groupIndex + 1).padStart(2, '0')}</i></header><ul>{group.members.map(member => <li key={`${member.name}-${member.detail ?? ''}`}><strong>{member.name}</strong>{member.detail && <small>{member.detail}</small>}</li>)}</ul></article>)}
+      </div>
+    </section>
     <ContactSection /><SiteFooter />
   </main>;
 }
