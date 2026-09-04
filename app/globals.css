@@ -302,10 +302,10 @@ footer { padding: 68px max(clamp(22px, 6vw, 96px), calc((100vw - 1600px) / 2 + 9
 .association-menu-card:first-child .association-menu-image, .association-menu-card:last-child .association-menu-image { height: 300px; aspect-ratio: auto; }
 .association-menu-card:first-child .association-menu-image img { object-fit: cover; object-position: center 42%; padding: 0; background: #05070a; transform: none; }
 .association-menu-card:nth-child(2) .association-menu-image img { object-position: center 54%; }
-.association-menu-card:nth-child(3) .association-menu-image img { object-position: center 52%; }
+.association-menu-card:nth-child(3) .association-menu-image img { object-position: center 62%; }
 .association-menu-card:nth-child(4) .association-menu-image img, .association-menu-card:nth-child(5) .association-menu-image img { object-position: center 58%; }
 .association-menu-card:nth-child(6) .association-menu-image img { object-position: center 48%; }
-.association-menu-card:nth-child(7) .association-menu-image img { object-position: center 68%; }
+.association-menu-card:nth-child(7) .association-menu-image img { object-fit: contain; object-position: center; background: #05070a; }
 .association-menu-card:nth-child(8) .association-menu-image { background: #fff; }
 .association-menu-card:nth-child(8) .association-menu-image img { object-fit: contain; object-position: center; background: #fff; transform: none; }
 .association-menu-card:nth-child(9) .association-menu-image img { object-position: center 42%; }
