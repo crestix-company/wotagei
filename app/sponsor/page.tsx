@@ -12,7 +12,7 @@ export const metadata: Metadata = {
 
 export default function SponsorPage() {
   return <main id="top"><SiteHeader />
-    <section className="inner-hero inner-service"><div className="inner-hero-bg"><img src="/assets/event-02.jpg" alt="光のパフォーマンスと観客" /></div><div className="inner-hero-copy"><p className="breadcrumb"><a href="/">HOME</a> / SPONSOR</p><p className="kicker">PARTNER WITH US</p><h1>応援を、<br />文化の力へ。</h1><p>企業・個人の皆さまと、若者の挑戦、地域のにぎわい、新しい文化の未来を育てます。</p></div><span className="inner-hero-number">07</span></section>
+    <section className="inner-hero inner-service sponsor-hero"><div className="inner-hero-bg"><picture><source media="(max-width: 720px)" srcSet="/assets/sponsor-hero-city-performance-mobile.jpg" /><img src="/assets/sponsor-hero-city-performance.jpg" alt="夜景を背に光を掲げるLumière" /></picture></div><div className="inner-hero-copy"><p className="breadcrumb"><a href="/">HOME</a> / SPONSOR</p><p className="kicker">PARTNER WITH US</p><h1>応援を、<br />文化の力へ。</h1><p>企業・個人の皆さまと、若者の挑戦、地域のにぎわい、新しい文化の未来を育てます。</p></div><span className="inner-hero-number">07</span></section>
 
     <section className="sponsor-section sponsor-page">
       <div className="sponsor-copy"><div className="section-label light"><span>07</span> SPONSORSHIP</div><p className="kicker">LIGHT THE FUTURE WITH US</p><h2>一緒だから、<br />届く光がある。</h2><p>ご予算と目的に合わせて、イベント出演、オリジナル演目、SNS・動画での発信、社内・地域向け体験企画などを組み合わせて個別にご提案します。単なる広告枠ではなく、共感が残る取り組みを一緒につくります。</p><a className="button button-light" href="/contact">スポンサーについて相談する <span>↗</span></a></div>

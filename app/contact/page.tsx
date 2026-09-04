@@ -10,7 +10,7 @@ export default function ContactPage() {
   return (
     <main id="top">
       <SiteHeader />
-      <section className="inner-hero inner-contact"><div className="inner-hero-bg"><img src="/assets/event-07.jpg" alt="Lumièreの活動風景" /></div><div className="inner-hero-copy"><p className="breadcrumb"><a href="/">HOME</a> / CONTACT</p><p className="kicker">START A CONVERSATION</p><h1>まだ輪郭のない<br />アイデアから。</h1><p>出演、レッスン、所属、スポンサー。まずはお気軽にお話しください。</p></div><span className="inner-hero-number">04</span></section>
+      <section className="inner-hero inner-contact contact-hero"><div className="inner-hero-bg"><picture><source media="(max-width: 720px)" srcSet="/assets/contact-hero-uno-mobile.jpg" /><img src="/assets/contact-hero-uno.jpg" alt="カードゲームを楽しむLumièreメンバー" /></picture></div><div className="inner-hero-copy"><p className="breadcrumb"><a href="/">HOME</a> / CONTACT</p><p className="kicker">START A CONVERSATION</p><h1>まだ輪郭のない<br />アイデアから。</h1><p>出演、レッスン、所属、スポンサー。まずはお気軽にお話しください。</p></div><span className="inner-hero-number">04</span></section>
 
       <section className="section contact-guide">
         <div className="section-label"><span>01</span> HOW TO CONTACT</div><div className="contact-guide-heading"><p className="kicker">CHOOSE A CHANNEL</p><h2>ご都合のよい方法で、<br /><em>ご相談ください。</em></h2></div>

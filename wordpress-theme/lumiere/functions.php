@@ -30,7 +30,11 @@ function lumiere_asset($file) {
 }
 
 function lumiere_mod($key, $default = '') {
-    return get_theme_mod('lumiere_' . $key, $default);
+    $value = get_theme_mod('lumiere_' . $key, $default);
+    if ('instagram_url' === $key && 'https://www.instagram.com/lumierewoodbell' === untrailingslashit((string) $value)) {
+        return 'https://www.instagram.com/lumiere20241103';
+    }
+    return $value;
 }
 
 function lumiere_phone_href() {
@@ -48,7 +52,7 @@ function lumiere_customize_register($customizer) {
         'line_url' => array('LINE URL', 'https://lin.ee/F5EQxq5', 'esc_url_raw'),
         'email' => array('メールアドレス', 'otagei.fukyuu@gmail.com', 'sanitize_email'),
         'phone' => array('電話番号', '080-6702-7899', 'sanitize_text_field'),
-        'instagram_url' => array('Instagram URL', 'https://www.instagram.com/lumierewoodbell', 'esc_url_raw'),
+        'instagram_url' => array('Instagram URL', 'https://www.instagram.com/lumiere20241103', 'esc_url_raw'),
         'youtube_url' => array('YouTube URL', 'https://www.youtube.com/@%E3%83%AB%E3%83%9F%E3%82%A8%E3%83%BC%E3%83%AB2024', 'esc_url_raw'),
         'x_url' => array('X URL', 'https://x.com/Lumierewoodbell', 'esc_url_raw'),
     );
