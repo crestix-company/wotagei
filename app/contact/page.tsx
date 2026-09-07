@@ -14,7 +14,12 @@ export default function ContactPage() {
 
       <section className="section contact-guide">
         <div className="section-label"><span>01</span> HOW TO CONTACT</div><div className="contact-guide-heading"><p className="kicker">CHOOSE A CHANNEL</p><h2>ご都合のよい方法で、<br /><em>ご相談ください。</em></h2></div>
-        <div className="contact-guide-grid"><a href="https://lin.ee/F5EQxq5" target="_blank" rel="noreferrer"><span>01 / LINE</span><h3>お急ぎのご相談</h3><p>出演日程やレッスンについて、LINE公式アカウントから気軽にご相談いただけます。</p><i>↗</i></a><a href="mailto:otagei.fukyuu@gmail.com"><span>02 / MAIL</span><h3>資料を添えたご相談</h3><p>企画書やイベント概要がある場合は、メールでお送りください。</p><i>↗</i></a><a href="tel:08067027899"><span>03 / TEL</span><h3>お電話でのご相談</h3><p>受付時間 9:00–22:00。出演中などで応答できない場合は折り返します。</p><i>↗</i></a></div>
+        <div className="contact-guide-grid"><a href="https://lin.ee/F5EQxq5" target="_blank" rel="noreferrer"><span>01 / LINE</span><h3>お急ぎのご相談</h3><p>出演日程やレッスンについて、LINE公式アカウントから気軽にご相談いただけます。</p><i>↗</i></a><a href="#contact-form"><span>02 / FORM</span><h3>フォームでのご相談</h3><p>必要事項をご入力のうえ、WordPressのお問い合わせフォームからお送りください。</p><i>↗</i></a><a href="tel:08067027899"><span>03 / TEL</span><h3>お電話でのご相談</h3><p>受付時間 9:00–22:00。出演中などで応答できない場合は折り返します。</p><i>↗</i></a></div>
+      </section>
+
+      <section className="contact-form-section" id="contact-form">
+        <div className="contact-form-copy"><p className="kicker">CONTACT FORM</p><h2>目的に合わせて、<br />お聞かせください。</h2><p>通常2営業日以内を目安にご返信します。</p></div>
+        <div className="contact-form-wrap contact-form-preview"><form><label><span>お問い合わせ目的</span><select defaultValue=""><option value="" disabled>選択してください</option><option>出演依頼</option><option>企業・自治体案件</option><option>スクール</option><option>所属チーム</option><option>スポンサー</option><option>その他</option></select></label><label><span>お名前 / ご担当者名</span><input type="text" /></label><label><span>メールアドレス</span><input type="email" /></label><label><span>ご相談内容</span><textarea rows={8} minLength={20} /></label><button type="button" disabled>WordPressフォームから送信 <i>↗</i></button><p>ローカル確認画面では送信されません。WordPress導入後、このフォームから安全に送信できます。</p></form></div>
       </section>
 
       <section className="section faq-section">

@@ -3,7 +3,7 @@ Theme Name: ヲタ芸普及協会 WLD
 Theme URI: https://lumiere-woodbell.com
 Author: Lumière
 Description: 一般社団法人ヲタ芸普及協会の公式サイト用オリジナルテーマ。所属チームLumièreの出演情報・活動実績・動画を管理画面から更新できます。
-Version: 1.1.13
+Version: 1.1.15
 Requires at least: 6.4
 Requires PHP: 7.4
 Text Domain: lumiere
@@ -361,12 +361,12 @@ footer { padding: 68px max(clamp(22px, 6vw, 96px), calc((100vw - 1600px) / 2 + 9
 .association-menu-heading > p { margin: 0; color: rgba(255,255,255,.55); font-size: 12px; line-height: 2; }
 .association-menu-grid { display: grid; grid-template-columns: repeat(4,minmax(0,1fr)); max-width: 1600px; margin: 0 auto; border-top: 1px solid rgba(39,168,255,.38); border-left: 1px solid rgba(39,168,255,.38); }
 .association-menu-card { position: relative; min-width: 0; min-height: 400px; overflow: hidden; background: var(--ink-soft); border-right: 1px solid rgba(39,168,255,.38); border-bottom: 1px solid rgba(39,168,255,.38); transition: background .25s ease; }
-.association-menu-card:first-child, .association-menu-card:last-child { grid-column: span 2; }
+.association-menu-card:first-child { grid-column: span 2; }
 .association-menu-card:hover { background: #11151c; }
 .association-menu-image { height: auto; aspect-ratio: 4 / 3; overflow: hidden; background: #05070a; }
 .association-menu-image img { transition: transform .65s ease, filter .35s ease; filter: saturate(.72) contrast(1.08); }
 .association-menu-card:hover img { transform: scale(1.05); filter: saturate(1) contrast(1.08); }
-.association-menu-card:first-child .association-menu-image, .association-menu-card:last-child .association-menu-image { height: 300px; aspect-ratio: auto; }
+.association-menu-card:first-child .association-menu-image { height: 300px; aspect-ratio: auto; }
 .association-menu-card:first-child .association-menu-image img { object-fit: cover; object-position: center 42%; padding: 0; background: #05070a; transform: none; }
 .association-menu-card:nth-child(2) .association-menu-image img { object-position: center 54%; }
 .association-menu-card:nth-child(3) .association-menu-image img { object-position: center 52%; }
@@ -655,9 +655,9 @@ footer { padding: 68px max(clamp(22px, 6vw, 96px), calc((100vw - 1600px) / 2 + 9
   .association-menu-heading h2 { font-size: clamp(42px,12vw,58px); }
   .association-menu-heading > p { margin-top: 30px; }
   .association-menu-grid { grid-template-columns: 1fr; }
-  .association-menu-card:first-child, .association-menu-card:last-child { grid-column: auto; }
+  .association-menu-card:first-child { grid-column: auto; }
   .association-menu-card { min-height: 390px; }
-  .association-menu-card:first-child .association-menu-image, .association-menu-card:last-child .association-menu-image { height: auto; aspect-ratio: 4 / 3; }
+  .association-menu-card:first-child .association-menu-image { height: auto; aspect-ratio: 4 / 3; }
   .hero { min-height: 760px; padding: 112px 20px 160px; align-items: center; }
   .hero-scrim { background: linear-gradient(90deg, rgba(2,3,5,.9), rgba(2,3,5,.48)), linear-gradient(0deg, rgba(2,3,5,.9), transparent 55%); }
   .hero h1 { font-size: clamp(46px, 14.6vw, 70px); line-height: .94; }
@@ -789,7 +789,7 @@ footer { padding: 68px max(clamp(22px, 6vw, 96px), calc((100vw - 1600px) / 2 + 9
 .corporate-spec dt { font-size: 12px; font-weight: 900; letter-spacing: .08em; }
 .corporate-spec dd { margin: 0; color: var(--muted); font-size: 14px; line-height: 1.8; }
 
-.contact-form-section { display: grid; grid-template-columns: minmax(280px,.75fr) 1.25fr; gap: clamp(50px,8vw,140px); padding: clamp(92px,10vw,150px) clamp(22px,6vw,100px); background: var(--ink); color: var(--white); }
+.contact-form-section { display: grid; grid-template-columns: minmax(280px,.75fr) 1.25fr; gap: clamp(50px,8vw,140px); padding: clamp(92px,10vw,150px) clamp(22px,6vw,100px); background: var(--ink); color: var(--white); scroll-margin-top: 84px; }
 .contact-form-copy h2 { margin: 16px 0 28px; font-size: clamp(42px,5vw,74px); line-height: 1.03; }
 .contact-form-copy > p:last-child { color: rgba(255,255,255,.62); line-height: 1.9; }
 .contact-form-wrap form { display: grid; gap: 22px; }

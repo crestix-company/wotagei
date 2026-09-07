@@ -50,7 +50,7 @@ function lumiere_customize_register($customizer) {
 
     $fields = array(
         'line_url' => array('LINE URL', 'https://lin.ee/F5EQxq5', 'esc_url_raw'),
-        'email' => array('メールアドレス', 'otagei.fukyuu@gmail.com', 'sanitize_email'),
+        'email' => array('フォーム通知先メールアドレス', get_option('admin_email'), 'sanitize_email'),
         'phone' => array('電話番号', '080-6702-7899', 'sanitize_text_field'),
         'instagram_url' => array('Instagram URL', 'https://www.instagram.com/lumiere20241103', 'esc_url_raw'),
         'youtube_url' => array('YouTube URL', 'https://www.youtube.com/@%E3%83%AB%E3%83%9F%E3%82%A8%E3%83%BC%E3%83%AB2024', 'esc_url_raw'),
@@ -208,11 +208,18 @@ function lumiere_handle_contact() {
     $email = isset($_POST['contact_email']) ? sanitize_email(wp_unslash($_POST['contact_email'])) : '';
     $type = isset($_POST['contact_type']) ? sanitize_text_field(wp_unslash($_POST['contact_type'])) : '';
     $message = isset($_POST['contact_message']) ? sanitize_textarea_field(wp_unslash($_POST['contact_message'])) : '';
-    if (!$name || !is_email($email) || !$message) {
+    $started_at = isset($_POST['contact_started_at']) ? absint($_POST['contact_started_at']) : 0;
+    $message_length = function_exists('mb_strlen') ? mb_strlen($message) : strlen($message);
+    if ($started_at && time() - $started_at < 3) {
+        wp_safe_redirect(home_url('/contact/?sent=1'));
+        exit;
+    }
+    if (!$name || !is_email($email) || $message_length < 20) {
         wp_safe_redirect(home_url('/contact/?error=1'));
         exit;
     }
-    $to = lumiere_mod('email', 'otagei.fukyuu@gmail.com');
+    $to = sanitize_email(lumiere_mod('email', get_option('admin_email')));
+    if (!is_email($to)) $to = sanitize_email(get_option('admin_email'));
     $subject = '[ヲタ芸普及協会 HP] ' . ($type ?: 'お問い合わせ') . ' / ' . $name;
     $body = "お名前: {$name}\nメール: {$email}\n目的: {$type}\n\n{$message}";
     $sent = wp_mail($to, $subject, $body, array('Reply-To: ' . $name . ' <' . $email . '>'));

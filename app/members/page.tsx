@@ -21,8 +21,8 @@ export default function MembersPage() {
     </section>
 
     <section className="member-recruit" id="recruit">
-      <article><p className="kicker">JOIN LUMIÈRE</p><h2>メンバー<br />募集中!!!</h2><p>技術だけでなく、文化を広げたい気持ちを大切にしています。出演、作品づくり、地域活動に一緒に挑戦したい方をお待ちしています。</p><a href="mailto:otagei.fukyuu@gmail.com?subject=Lumièreメンバー応募について">メンバー応募を相談する <span>↗</span></a></article>
-      <article><p className="kicker">JOIN THE ASSOCIATION</p><h2>所属チーム<br />募集中</h2><p>一般社団法人ヲタ芸普及協会では、地域や活動歴を問わず、ともにヲタ芸の未来を育てるチームを募集しています。</p><a href="mailto:otagei.fukyuu@gmail.com?subject=協会所属チームについて">所属チームについて相談する <span>↗</span></a></article>
+      <article><p className="kicker">JOIN LUMIÈRE</p><h2>メンバー<br />募集中!!!</h2><p>技術だけでなく、文化を広げたい気持ちを大切にしています。出演、作品づくり、地域活動に一緒に挑戦したい方をお待ちしています。</p><a href="/contact#contact-form">メンバー応募を相談する <span>↗</span></a></article>
+      <article><p className="kicker">JOIN THE ASSOCIATION</p><h2>所属チーム<br />募集中</h2><p>一般社団法人ヲタ芸普及協会では、地域や活動歴を問わず、ともにヲタ芸の未来を育てるチームを募集しています。</p><a href="/contact#contact-form">所属チームについて相談する <span>↗</span></a></article>
     </section>
     <ContactSection /><SiteFooter />
   </main>;
