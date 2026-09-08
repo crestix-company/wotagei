@@ -19,7 +19,7 @@ const notices = [
 
 export default function NewsPage() {
   return <main id="top"><SiteHeader />
-    <section className="inner-hero journal-hero news-hero"><div className="inner-hero-bg"><img src="/assets/news-hero-kimitsu.jpg" alt="君津市房総フェスタでのLumièreのヲタ芸パフォーマンス" /></div><div className="inner-hero-copy"><p className="breadcrumb"><a href="/">HOME</a> / NEWS</p><p className="kicker">LIVE INFO / IMPORTANT NEWS</p><h1>次に会える場所と、<br />大切なお知らせ。</h1><p>出演予定、活動に関するご案内、協会からの重要なお知らせをまとめています。</p></div><span className="inner-hero-number">03</span></section>
+    <section className="inner-hero journal-hero news-hero"><div className="inner-hero-bg"><img src="/assets/news-hero-starry-team.jpg" width={1086} height={1448} alt="星空を背景にしたLumièreメンバー3人の写真" /></div><div className="inner-hero-copy"><p className="breadcrumb"><a href="/">HOME</a> / NEWS</p><p className="kicker">LIVE INFO / IMPORTANT NEWS</p><h1>次に会える場所と、<br />大切なお知らせ。</h1><p>出演予定、活動に関するご案内、協会からの重要なお知らせをまとめています。</p></div><span className="inner-hero-number">03</span></section>
 
     <section className="news section news-page">
       <div className="section-label light"><span>03</span> APPEARANCE SCHEDULE</div>
