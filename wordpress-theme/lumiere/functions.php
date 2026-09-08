@@ -55,6 +55,7 @@ function lumiere_customize_register($customizer) {
         'instagram_url' => array('Instagram URL', 'https://www.instagram.com/lumiere20241103', 'esc_url_raw'),
         'youtube_url' => array('YouTube URL', 'https://www.youtube.com/@%E3%83%AB%E3%83%9F%E3%82%A8%E3%83%BC%E3%83%AB2024', 'esc_url_raw'),
         'footer_youtube_url' => array('YouTube URL（フッター）', 'https://www.youtube.com/@LumiereWotagei', 'esc_url_raw'),
+        'bitfan_url' => array('Bitfan URL（空欄で準備中）', '', 'esc_url_raw'),
         'x_url' => array('X URL', 'https://x.com/Lumierewoodbell', 'esc_url_raw'),
     );
 

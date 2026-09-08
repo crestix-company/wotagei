@@ -13,11 +13,23 @@
         <a href="<?php echo esc_url(home_url('/about/')); ?>">10 LUMIÈRE</a>
         <a href="<?php echo esc_url(home_url('/blog/')); ?>">11 DIARY</a>
     </div>
-    <div class="footer-links">
-        <a href="<?php echo esc_url(lumiere_mod('instagram_url', 'https://www.instagram.com/lumiere20241103')); ?>" target="_blank" rel="noreferrer">INSTAGRAM ↗</a>
-        <a href="<?php echo esc_url(lumiere_mod('footer_youtube_url', 'https://www.youtube.com/@LumiereWotagei')); ?>" target="_blank" rel="noreferrer">YOUTUBE ↗</a>
-        <a href="<?php echo esc_url(lumiere_mod('x_url', 'https://x.com/Lumierewoodbell')); ?>" target="_blank" rel="noreferrer">X ↗</a>
-        <a href="<?php echo esc_url(lumiere_mod('line_url', 'https://lin.ee/F5EQxq5')); ?>" target="_blank" rel="noreferrer">LINE ↗</a>
+    <div class="footer-connect">
+        <div class="footer-links">
+            <a href="<?php echo esc_url(lumiere_mod('instagram_url', 'https://www.instagram.com/lumiere20241103')); ?>" target="_blank" rel="noreferrer">INSTAGRAM ↗</a>
+            <a href="<?php echo esc_url(lumiere_mod('footer_youtube_url', 'https://www.youtube.com/@LumiereWotagei')); ?>" target="_blank" rel="noreferrer">YOUTUBE ↗</a>
+            <a href="<?php echo esc_url(lumiere_mod('x_url', 'https://x.com/Lumierewoodbell')); ?>" target="_blank" rel="noreferrer">X ↗</a>
+            <a href="<?php echo esc_url(lumiere_mod('line_url', 'https://lin.ee/F5EQxq5')); ?>" target="_blank" rel="noreferrer">LINE ↗</a>
+        </div>
+        <?php $bitfan_url = esc_url(lumiere_mod('bitfan_url', ''), array('http', 'https')); ?>
+        <?php if ($bitfan_url) : ?>
+            <a class="bitfan-button" href="<?php echo $bitfan_url; ?>" target="_blank" rel="noopener noreferrer" aria-label="LumièreのBitfanを開く（新しいタブ）">
+                <span class="bitfan-button-copy"><span class="bitfan-button-eyebrow">Lumière</span><span class="bitfan-button-name">Bitfan</span></span><span class="bitfan-button-arrow" aria-hidden="true">↗</span>
+            </a>
+        <?php else : ?>
+            <button class="bitfan-button" type="button" disabled>
+                <span class="bitfan-button-copy"><span class="bitfan-button-eyebrow">Lumière</span><span class="bitfan-button-name">Bitfan</span></span><span class="bitfan-button-status">準備中</span>
+            </button>
+        <?php endif; ?>
     </div>
     <div class="footer-bottom"><span>© <?php echo esc_html(wp_date('Y')); ?> 一般社団法人ヲタ芸普及協会</span><a href="#top">BACK TO TOP ↑</a></div>
 </footer>

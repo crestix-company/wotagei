@@ -1,4 +1,5 @@
 export const youtubeChannel = 'https://www.youtube.com/@%E3%83%AB%E3%83%9F%E3%82%A8%E3%83%BC%E3%83%AB2024';
+export const bitfanUrl: string = '';
 export const youtubeSearch = (query: string) => `https://www.youtube.com/results?search_query=${encodeURIComponent(query)}`;
 
 export const upcoming = [
