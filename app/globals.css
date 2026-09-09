@@ -281,7 +281,7 @@ a.schedule-row:hover .schedule-area { color: #fff; }
 .daily-photo:hover img { transform: scale(1.025); filter: saturate(1.08); }
 .daily-photo figcaption { position: absolute; z-index: 1; right: 18px; bottom: 16px; left: 18px; display: flex; align-items: center; justify-content: space-between; gap: 14px; color: #fff; }
 .daily-photo figcaption span { color: var(--cyan); font-size: 9px; font-weight: 900; letter-spacing: .12em; }
-.daily-photo figcaption small { font-size: 8px; font-weight: 900; letter-spacing: .15em; }
+.daily-photo figcaption small { font-size: .75rem; font-weight: 700; line-height: 1.6; letter-spacing: .06em; }
 
 .message-section { display: grid; grid-template-columns: 1fr 1fr; column-gap: clamp(50px, 8vw, 130px); }
 .message-section .section-label { grid-column: 1 / -1; }

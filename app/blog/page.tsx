@@ -13,19 +13,19 @@ const posts = [
 ];
 
 const dailyPhotos = [
-  { image: '/assets/diary-01.jpg', alt: '夜のイベントを終えたLumièreメンバーと来場者', label: 'AFTER THE PERFORMANCE', layout: 'portrait' },
-  { image: '/assets/diary-02.jpg', alt: '撮影現場で記念写真に収まるLumièreと来場者', label: 'BEHIND THE SCENES', layout: 'portrait' },
-  { image: '/assets/diary-03.jpg', alt: 'イベント会場で交流するLumièreメンバー', label: 'LOCAL CONNECTION', layout: 'portrait' },
-  { image: '/assets/diary-04.jpg', alt: '海辺の会場でポーズをとるLumièreメンバー', label: 'TEAM TIME', layout: 'feature' },
-  { image: '/assets/diary-05.jpg', alt: '交流会で記念写真に収まるLumièreメンバーと関係者', label: 'SPECIAL MOMENT', layout: 'landscape' },
-  { image: '/assets/diary-06.jpg', alt: '海外ゲストと交流するLumièreメンバー', label: 'NEW ENCOUNTER', layout: 'landscape' },
-  { image: '/assets/diary-07.jpg', alt: '地域のキャラクターとポーズをとるLumièreメンバー', label: 'FESTIVAL NIGHT', layout: 'square' },
-  { image: '/assets/diary-08.jpg', alt: '活動を支える仲間と笑顔で過ごすLumièreメンバー', label: 'OFF THE STAGE', layout: 'square' },
-  { image: '/assets/diary-09.jpg', alt: 'テレビで紹介されたLumièreのヲタ芸パフォーマンス', label: 'ON AIR', layout: 'square' },
-  { image: '/assets/diary-10.jpg', alt: 'イベントで披露されたLumièreのヲタ芸', label: 'WOTAGEI CULTURE', layout: 'panorama' },
-  { image: '/assets/diary-11.jpg', alt: '地域イベントで来場者と記念写真に収まるLumièreメンバー', label: 'LOCAL DAYS', layout: 'portrait' },
-  { image: '/assets/diary-12.jpg', alt: '講習会で参加者と交流するLumièreメンバー', label: 'WORKSHOP', layout: 'end' },
-  { image: '/assets/diary-13.jpg', alt: '講習後に参加者と笑顔で記念撮影するLumièreメンバー', label: 'NEW CONNECTION', layout: 'end' },
+  { image: '/assets/diary-01.jpg', alt: '夜のイベントを終えたLumièreメンバーと来場者', label: '出演後のひととき', layout: 'portrait' },
+  { image: '/assets/diary-02.jpg', alt: '撮影現場で記念写真に収まるLumièreと来場者', label: '撮影の舞台裏', layout: 'portrait' },
+  { image: '/assets/diary-03.jpg', alt: 'イベント会場で交流するLumièreメンバー', label: '地域とのつながり', layout: 'portrait' },
+  { image: '/assets/diary-04.jpg', alt: '海辺の会場でポーズをとるLumièreメンバー', label: '仲間との時間', layout: 'feature' },
+  { image: '/assets/diary-05.jpg', alt: '交流会で記念写真に収まるLumièreメンバーと関係者', label: '特別なひととき', layout: 'landscape' },
+  { image: '/assets/diary-06.jpg', alt: '海外ゲストと交流するLumièreメンバー', label: '新しい出会い', layout: 'landscape' },
+  { image: '/assets/diary-07.jpg', alt: '地域のキャラクターとポーズをとるLumièreメンバー', label: 'お祭りの夜', layout: 'square' },
+  { image: '/assets/diary-08.jpg', alt: '活動を支える仲間と笑顔で過ごすLumièreメンバー', label: 'ステージの外で', layout: 'square' },
+  { image: '/assets/diary-09.jpg', alt: 'テレビで紹介されたLumièreのヲタ芸パフォーマンス', label: 'テレビ出演', layout: 'square' },
+  { image: '/assets/diary-10.jpg', alt: 'イベントで披露されたLumièreのヲタ芸', label: 'ヲタ芸文化', layout: 'panorama' },
+  { image: '/assets/diary-11.jpg', alt: '地域イベントで来場者と記念写真に収まるLumièreメンバー', label: '地域での日々', layout: 'portrait' },
+  { image: '/assets/diary-12.jpg', alt: '講習会で参加者と交流するLumièreメンバー', label: '講習会', layout: 'end' },
+  { image: '/assets/diary-13.jpg', alt: '講習後に参加者と笑顔で記念撮影するLumièreメンバー', label: '新しいつながり', layout: 'end' },
 ];
 
 export default function BlogPage() {
